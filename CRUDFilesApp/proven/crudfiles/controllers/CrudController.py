@@ -29,7 +29,6 @@ class CrudController:
     def exitApplication(self):
         quit()
         
-    #TODO: Comment and implement all the options (Use view methods)
     def crearFitxer(self):
         filepath = self.view.showInputDialog("Nom del nou arxiu: ")
         if self.model.createFile(filepath):
@@ -48,7 +47,14 @@ class CrudController:
     
     def escriureFitxer(self):
         filepath = self.view.showInputDialog("Nom del arxiu per escriure: ")
-        self.model.writeFile(filepath)
-    
+        text: str = self.view.showInputDialog("Quin missatge vols posar?: ")
+        done = self.model.writeFile(filepath, text)
+        if done == False:
+            self.view.showMessage("No s'ha pogut fer l'operació")
+        
     def esborrarFitxer(self):
-        self.view.showMessage("NOT IMPLEMENTED YET!")
+        filepath = self.view.showInputDialog("Nom del arxiu per esborrar: ")
+        if self.model.removeFile(filepath):
+            self.view.showMessage("L'arxiu " + filepath + " s'ha esborrat correctament")
+        else:
+            self.view.showMessage("L'arxiu " + filepath + " no s'ha esborrat")

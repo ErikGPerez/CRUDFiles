@@ -1,9 +1,9 @@
 import os
 
 class CrudModel:
-    #TODO Comment and implement all the defs to work with files
     def createFile(self, filepath) -> bool:
         cond = False
+        
         if open(filepath, "x"):
             cond = True
         return cond
@@ -16,12 +16,20 @@ class CrudModel:
             
         return fileRead
     
-    def writeFile(self, filepath):
-        open(filepath, "w")
-        pass
-    
-    def removeFile(self, filepath):
-        os.remove(filepath)
-        pass
+    def writeFile(self, filepath, text: str):
+        #TODO: Improve this method by reading as well
+        try:
+            fileWrite = open(filepath, "w")
+            fileWrite.write(text)
+            return True
+        except:
+            return False
+        
+    def removeFile(self, filepath) -> bool:
+        try:
+            os.remove(filepath)
+        except:
+            return False
+        return True
     
     

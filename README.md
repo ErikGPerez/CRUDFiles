@@ -9,6 +9,10 @@ CRUD FILES DESARROLLADO POR ERIK GRANADO PÉREZ
 # Update 2: Creating Model and Controller
  Second update
 
+# Update 3: Finishing the exercice
+ I need to finish some TODOs by improving the code and commenting all the things 1 by 1.
+
+ With all that It will be finished at all. Maybe I can test it, but I don't have so much time. 
 
 -------------------------------------------------
 # Exercise TODO
