@@ -27,12 +27,12 @@ class CrudView:
             if action:
                 self.control.processRequest(action)
     
-    def showFriendTable(self, data):
+    def showTable(self, data):
         cont = 0
-        for Friend in data:
-            print(Friend)
+        for Object in data:
+            print(Object)
             cont = cont + 1
-        print(str(cont) + " Elements found. " + str(len(data)))
+        print(str(cont) + " Elements found")
         
     def crudForm(self, inputU):
         return inputU
