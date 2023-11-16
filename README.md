@@ -14,6 +14,17 @@ CRUD FILES DESARROLLADO POR ERIK GRANADO PÉREZ
 
  With all that It will be finished at all. Maybe I can test it, but I don't have so much time. 
 
+# Final update
+ I think the exercise is done. I know that my english it's not good, but I'm improving my english by writing and forcing me to explain myself here.
+
+ Last of all, I will specify what things I'm aware that are missing to this code:
+
+ 1. Comment all the methods
+ 2. Simplify the code
+ 3. Some parts of the code were wrote on Catalan or Spanish, instead of English
+ 
+ You can advise me of little details to improve my skills. Keep in mind that i'm just a begginer
+
 -------------------------------------------------
 # Exercise TODO
         Fes un programa que sigui estructurat amb objectes en Python que gestioni fitxers, ha de sortir un menú amb les opcions:
