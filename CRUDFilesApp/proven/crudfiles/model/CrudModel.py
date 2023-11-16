@@ -44,7 +44,8 @@ class CrudModel:
         """
         try:
             fileWrite = open(filepath, "a")
-            fileWrite.write(text)
+            fileWrite.write(text + "\n")
+            
             return True
         except:
             return False
@@ -63,5 +64,3 @@ class CrudModel:
         except:
             return False
         return True
-    
-    
